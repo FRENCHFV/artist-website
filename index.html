@@ -3,12 +3,10 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#F5F1E8">
-  <meta name="description" content="FV. — Independent artist from Thailand. สร้างเพลงในแบบที่เป็นตัวเอง">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FV. — ศิลปินอิสระจากประเทศไทย สร้างเพลงในแบบที่เป็นตัวเอง">
   <title>FV. — Independent Artist</title>
 
-  <!-- Google Fonts: IBM Plex Sans Thai + DM Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,966 +24,550 @@
 
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 85px;
     }
 
     body {
+      margin: 0;
       background: var(--cream);
-      color: var(--charcoal);
+      color: var(--navy);
       font-family: "IBM Plex Sans Thai", sans-serif;
       font-size: 16px;
       line-height: 1.85;
-      overflow-x: hidden;
     }
 
     a {
       color: inherit;
       text-decoration: none;
-      -webkit-tap-highlight-color: transparent;
     }
 
-    a:focus-visible {
-      outline: 3px solid var(--slate);
-      outline-offset: 4px;
+    .hero {
+      min-height: 620px;
+      height: 88vh;
+      max-height: 900px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 28%, #DCE7ED 0%, #B9CFDC 35%, #7F9FB5 70%, #52718A 100%);
     }
-
-    .english {
-      font-family: "DM Sans", sans-serif;
-    }
-
-    .eyebrow {
-      color: var(--slate);
-      font-family: "DM Sans", sans-serif;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .section-title {
-      color: var(--navy);
-      font-family: "DM Sans", sans-serif;
-      font-size: clamp(36px, 5vw, 50px);
-      font-weight: 600;
-      line-height: 1.3;
-      letter-spacing: -1.5px;
-    }
-
-    .container {
-      width: min(1100px, 88%);
-      margin: 0 auto;
-    }
-
-    /* Navigation */
 
     .nav {
-      position: absolute;
-      z-index: 10;
-      top: 0;
-      left: 0;
       display: flex;
-      width: 100%;
       align-items: center;
       justify-content: space-between;
       padding: 24px 6%;
+      gap: 20px;
     }
 
-    .logo {
-      color: var(--navy);
+    .brand {
       font-family: "DM Sans", sans-serif;
-      font-size: 38px;
+      font-size: 32px;
       font-weight: 700;
-      font-style: italic;
       letter-spacing: -2px;
-      line-height: 1;
     }
 
     .nav-links {
       display: flex;
+      gap: 10px;
       align-items: center;
-      gap: 30px;
+      flex-wrap: wrap;
+      font-family: "DM Sans", sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.08em;
     }
 
     .nav-links a {
-      color: var(--navy);
+      padding: 7px 15px;
+      border: 1px solid var(--navy);
+      border-radius: 30px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-links a:first-child,
+    .nav-links a:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .hero-copy {
+      margin: auto;
+      text-align: center;
+      padding: 35px 20px 75px;
+    }
+
+    .eyebrow,
+    .section-label {
       font-family: "DM Sans", sans-serif;
       font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      transition: opacity 0.2s;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
     }
 
-    .nav-links a:hover {
-      opacity: 0.65;
-    }
-
-    /* Hero */
-
-    .hero {
-      position: relative;
-      display: flex;
-      min-height: 540px;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      padding: 120px 20px 75px;
-      background:
-        radial-gradient(ellipse at 15% 15%, rgba(255,255,255,0.95), transparent 42%),
-        radial-gradient(ellipse at 85% 25%, rgba(178,204,218,0.8), transparent 40%),
-        linear-gradient(155deg, #F5F1E8 5%, #DCE7ED 70%, #C5D7E2 100%);
-    }
-
-    .hero::before {
-      position: absolute;
-      right: -100px;
-      bottom: -180px;
-      width: 520px;
-      height: 360px;
-      border: 1px solid rgba(23,58,86,0.13);
-      border-radius: 50%;
-      content: "";
-      transform: rotate(-20deg);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 750px;
-      text-align: center;
-    }
-
-    .hero .eyebrow {
-      margin-bottom: 20px;
-    }
-
-    .hero-title {
-      color: var(--navy);
+    .hero h1 {
       font-family: "DM Sans", sans-serif;
-      font-size: clamp(100px, 18vw, 160px);
-      font-weight: 700;
-      font-style: italic;
-      letter-spacing: -8px;
-      line-height: 1.15;
+      font-size: clamp(100px, 16vw, 160px);
+      font-weight: 500;
+      letter-spacing: -0.09em;
+      line-height: 1;
+      margin: 25px 0;
     }
 
-    .hero-line {
-      width: 60px;
-      height: 2px;
-      margin: 20px auto 18px;
-      background: var(--slate);
+    .rule {
+      width: 44px;
+      height: 1px;
+      background: var(--navy);
+      margin: 0 auto 22px;
     }
 
     .tagline {
-      color: var(--navy);
-      font-size: 21px;
-      font-weight: 500;
+      font-size: clamp(17px, 2vw, 21px);
+      margin: 0;
     }
 
-    .hero-note {
-      margin-top: 14px;
-      color: var(--slate);
-      font-family: "DM Sans", sans-serif;
-      font-size: 15px;
-      font-style: italic;
-      letter-spacing: 1px;
+    .scroll {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      font-size: 26px;
+      transform: translateX(-50%);
     }
 
-    .scroll-cue {
-      display: inline-flex;
-      width: 42px;
-      height: 42px;
-      align-items: center;
-      justify-content: center;
-      margin-top: 32px;
-      border: 1px solid var(--line);
-      border-radius: 50%;
-      color: var(--navy);
-      font-size: 23px;
-      transition: background 0.2s, transform 0.2s;
+    main {
+      width: 100%;
     }
-
-    .scroll-cue:hover {
-      background: rgba(255,255,255,0.6);
-      transform: translateY(3px);
-    }
-
-    /* About */
 
     .about {
-      padding: 90px 0;
-      background: var(--cream);
-    }
-
-    .about-grid {
+      max-width: 1180px;
+      margin: auto;
+      padding: 100px 8%;
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
+      grid-template-columns: 0.85fr 1.15fr;
       align-items: center;
-      gap: 75px;
+      gap: clamp(35px, 7vw, 90px);
     }
 
-    .about-art {
-      position: relative;
-      display: flex;
+    .about-photo {
       min-height: 340px;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      background:
-        radial-gradient(ellipse at 70% 25%, rgba(255,255,255,0.8), transparent 35%),
-        linear-gradient(150deg, #DCE7ED, #B6CBD8);
-    }
-
-    .about-art::before,
-    .about-art::after {
-      position: absolute;
-      border: 1px solid rgba(23,58,86,0.3);
-      content: "";
-      transform: rotate(-15deg);
-    }
-
-    .about-art::before {
-      width: 230px;
-      height: 290px;
-    }
-
-    .about-art::after {
-      width: 200px;
-      height: 260px;
-      transform: rotate(8deg);
-    }
-
-    .art-mark {
-      position: relative;
-      z-index: 1;
-      color: var(--navy);
-      font-family: "DM Sans", sans-serif;
-      font-size: 90px;
-      font-weight: 700;
-      font-style: italic;
-    }
-
-    .art-caption {
-      position: absolute;
-      right: 18px;
-      bottom: 15px;
-      color: var(--navy);
-      font-family: "DM Sans", sans-serif;
-      font-size: 13px;
-      font-style: italic;
-    }
-
-    .about-copy .eyebrow {
-      margin-bottom: 12px;
-    }
-
-    .about-copy .section-title {
-      margin-bottom: 20px;
-    }
-
-    .about-copy p {
-      color: var(--charcoal);
-      font-size: 17px;
-      line-height: 2;
-    }
-
-    .about-copy .about-signature {
-      margin-top: 20px;
+      display: grid;
+      place-items: center;
+      background: var(--blue);
       color: var(--slate);
       font-family: "DM Sans", sans-serif;
-      font-size: 18px;
-      font-style: italic;
+      font-size: 54px;
+      font-weight: 500;
+      letter-spacing: -5px;
     }
 
-    /* Music */
+    .section-label {
+      color: var(--slate);
+    }
+
+    h2 {
+      font-family: "DM Sans", "IBM Plex Sans Thai", sans-serif;
+      font-size: clamp(32px, 4vw, 44px);
+      font-weight: 500;
+      letter-spacing: -0.04em;
+      line-height: 1.4;
+      margin: 12px 0 28px;
+    }
+
+    .about h2,
+    .heading h2,
+    .follow h2 {
+      width: fit-content;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--navy);
+    }
+
+    .about p {
+      max-width: 620px;
+      font-size: 16px;
+      line-height: 1.95;
+      margin: 0;
+    }
 
     .music {
-      padding: 85px 0 90px;
-      background:
-        radial-gradient(ellipse at 90% 10%, rgba(255,255,255,0.55), transparent 40%),
-        var(--blue);
+      padding: 85px 8% 100px;
+      background: var(--blue);
     }
 
-    .music-heading {
+    .heading {
+      max-width: 1080px;
+      margin: 0 auto 38px;
       display: flex;
       align-items: end;
       justify-content: space-between;
-      gap: 25px;
-      margin-bottom: 36px;
+      gap: 24px;
     }
 
-    .music-heading .eyebrow {
-      margin-bottom: 8px;
-    }
-
-    .music-intro {
-      max-width: 310px;
-      color: var(--charcoal);
-      font-size: 15px;
-      text-align: right;
-    }
-
-    .track-list {
-      border-top: 1px solid var(--line);
-    }
-
-    .track {
-      display: grid;
-      grid-template-columns: 46px 82px minmax(0, 1fr) auto;
-      align-items: center;
-      gap: 22px;
-      padding: 22px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .track-number {
-      color: var(--navy);
-      font-family: "DM Sans", sans-serif;
-      font-size: 25px;
-      font-weight: 500;
-    }
-
-    .track-art {
-      display: flex;
-      width: 82px;
-      height: 82px;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      background: linear-gradient(145deg, #F5F1E8, #B6CBD8);
-      color: var(--navy);
-      font-family: "DM Sans", sans-serif;
-      font-size: 28px;
-      font-weight: 600;
-      flex-shrink: 0;
-    }
-
-    .track:nth-child(2n) .track-art {
-      background: linear-gradient(145deg, #C7D8E2, #F5F1E8);
-    }
-
-    .track-info {
-      min-width: 0;
-    }
-
-    .track-title {
-      margin-bottom: 6px;
-      color: var(--navy);
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 1.65;
-    }
-
-    .track-description {
+    .heading h2 {
       margin-bottom: 12px;
-      color: var(--charcoal);
-      font-size: 15px;
-      line-height: 1.9;
     }
 
-    .track-credits {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px 24px;
-      color: #294D68;
-      font-size: 14px;
-      line-height: 1.9;
-    }
-
-    .main-credit {
-      font-family: "DM Sans", sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-    }
-
-    .listen-btn {
-      display: inline-flex;
-      min-width: 120px;
-      min-height: 46px;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      padding: 11px 16px;
-      background: var(--navy);
-      color: var(--white);
-      font-family: "DM Sans", sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      transition: background 0.2s, transform 0.2s;
-    }
-
-    .listen-btn:hover {
-      background: var(--slate);
-      transform: translateY(-2px);
-    }
-
-    /* Follow */
-
-    .follow {
-      padding: 90px 0 80px;
-      background: var(--cream);
-      text-align: center;
-    }
-
-    .follow .eyebrow {
-      margin-bottom: 10px;
-    }
-
-    .follow .section-title {
-      margin-bottom: 14px;
-    }
-
-    .follow-description {
-      color: var(--charcoal);
+    .heading > div > p {
       font-size: 16px;
-    }
-
-    .social-links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0;
-      margin-top: 36px;
-    }
-
-    .social-link {
-      display: flex;
-      min-width: 225px;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      padding: 10px 28px;
-      color: var(--navy);
-      transition: color 0.2s;
-    }
-
-    .social-link + .social-link {
-      border-left: 1px solid var(--line);
-    }
-
-    .social-link:hover {
+      margin: 0;
       color: var(--slate);
     }
 
-    .social-icon {
-      width: 27px;
-      height: 27px;
-      flex-shrink: 0;
-    }
-
-    .social-text {
-      text-align: left;
-    }
-
-    .social-label {
-      display: block;
+    .heading .credit-heading {
+      font-size: 13px;
+      color: var(--slate);
       font-family: "DM Sans", sans-serif;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 1.2px;
     }
 
-    .social-handle {
-      display: block;
-      margin-top: 4px;
+    .songs {
+      max-width: 1080px;
+      margin: auto;
+      border-top: 1px solid var(--line);
+    }
+
+    .song {
+      display: grid;
+      grid-template-columns: 40px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 18px;
+      padding: 25px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .num {
+      color: var(--slate);
+      font-family: "DM Sans", sans-serif;
       font-size: 14px;
     }
 
-    /* Footer */
+    .song h3 {
+      font-family: "IBM Plex Sans Thai", sans-serif;
+      font-size: 21px;
+      line-height: 1.5;
+      font-weight: 500;
+      margin: 0 0 8px;
+    }
 
-    .footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 25px 6%;
-      border-top: 1px solid var(--line);
-      background: var(--cream);
-      color: #294D68;
+    .song p {
+      font-size: 15px;
+      line-height: 1.85;
+      margin: 0;
+      color: var(--charcoal);
+    }
+
+    .song .credit {
+      margin-top: 7px;
+      color: var(--slate);
       font-size: 13px;
     }
 
-    .footer-brand {
-      color: var(--navy);
+    .song .credit + .credit {
       font-family: "DM Sans", sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      font-style: italic;
+      font-size: 12px;
     }
 
-    /* Responsive */
+    .listen {
+      display: inline-block;
+      border: 1px solid var(--navy);
+      border-radius: 30px;
+      padding: 9px 17px;
+      font-family: "DM Sans", sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+    }
 
-    @media (max-width: 760px) {
-      .nav {
-        padding: 22px 6%;
+    .listen:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .follow {
+      padding: 85px 8%;
+      text-align: center;
+      background: var(--cream);
+    }
+
+    .follow h2 {
+      margin: 12px auto 15px;
+    }
+
+    .follow p {
+      font-size: 16px;
+      color: var(--slate);
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .socials a {
+      border: 1px solid var(--navy);
+      border-radius: 30px;
+      padding: 9px 18px;
+      font-family: "DM Sans", sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .socials a:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 6%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: var(--slate);
+      font-family: "DM Sans", sans-serif;
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        min-height: 560px;
+        height: 84vh;
       }
 
-      .logo {
-        font-size: 32px;
+      .nav {
+        padding: 20px 6%;
+        align-items: flex-start;
+      }
+
+      .brand {
+        font-size: 27px;
       }
 
       .nav-links {
-        gap: 15px;
+        gap: 6px;
+        justify-content: flex-end;
+        max-width: 78%;
+        font-size: 10px;
       }
 
       .nav-links a {
-        font-size: 11px;
-        letter-spacing: 0.8px;
-      }
-
-      .hero {
-        min-height: 470px;
-        padding-top: 115px;
-      }
-
-      .hero-title {
-        letter-spacing: -5px;
-      }
-
-      .tagline {
-        font-size: 19px;
+        padding: 5px 10px;
       }
 
       .about {
-        padding: 65px 0;
-      }
-
-      .about-grid {
+        padding: 65px 7%;
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 30px;
       }
 
-      .about-art {
+      .about-photo {
         min-height: 260px;
       }
 
-      .about-copy p {
+      .about p {
         font-size: 16px;
       }
 
       .music {
-        padding: 65px 0;
+        padding: 65px 7%;
       }
 
-      .music-heading {
+      .heading {
         display: block;
       }
 
-      .music-intro {
-        margin-top: 12px;
-        text-align: left;
+      .heading .credit-heading {
+        margin-top: 20px;
       }
 
-      .track {
-        grid-template-columns: 30px 64px minmax(0, 1fr);
-        gap: 13px;
-        padding: 21px 0;
+      .song {
+        grid-template-columns: 27px minmax(0, 1fr);
+        gap: 12px;
+        padding: 23px 0;
       }
 
-      .track-number {
-        font-size: 20px;
+      .song h3 {
+        font-size: 19px;
       }
 
-      .track-art {
-        width: 64px;
-        height: 64px;
-        font-size: 23px;
-      }
-
-      .track-title {
-        font-size: 18px;
-      }
-
-      .track-description {
+      .song p {
         font-size: 15px;
-        line-height: 1.9;
       }
 
-      .track-credits {
-        display: grid;
-        gap: 4px;
-        font-size: 14px;
-      }
-
-      .main-credit {
-        font-size: 13px;
-        line-height: 1.8;
-      }
-
-      .listen-btn {
-        grid-column: 3;
+      .listen {
+        grid-column: 2;
         justify-self: start;
-        min-width: 112px;
-        min-height: 42px;
-        padding: 9px 13px;
+        margin-top: 5px;
       }
 
       .follow {
-        padding: 65px 0;
+        padding: 65px 7%;
       }
 
-      .social-link {
-        min-width: 0;
-        gap: 9px;
-        padding: 10px 14px;
-      }
-
-      .social-label {
-        font-size: 10px;
-      }
-
-      .social-handle {
-        font-size: 13px;
-      }
-
-      .footer {
-        flex-wrap: wrap;
-        padding: 22px 6%;
-        font-size: 12px;
-      }
-    }
-
-    @media (max-width: 390px) {
-      .nav-links {
-        gap: 10px;
-      }
-
-      .nav-links a {
-        font-size: 10px;
-      }
-
-      .track {
-        grid-template-columns: 25px 54px minmax(0, 1fr);
-        gap: 10px;
-      }
-
-      .track-art {
-        width: 54px;
-        height: 54px;
-      }
-
-      .track-title {
-        font-size: 17px;
-      }
-
-      .track-description {
-        font-size: 14px;
-      }
-
-      .track-credits {
-        font-size: 13px;
-      }
-
-      .main-credit {
-        font-size: 12px;
-      }
-
-      .social-link {
-        padding: 8px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      *,
-      *::before,
-      *::after {
-        transition-duration: 0.01ms !important;
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
       }
     }
   </style>
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <header class="nav">
-    <a class="logo" href="#home" aria-label="FV. Home">FV.</a>
-
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#music">MUSIC</a>
-      <a href="#follow">FOLLOW</a>
+  <header class="hero" id="home">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">FV.</a>
+      <div class="nav-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#music">MUSIC</a>
+        <a href="#follow">FOLLOW</a>
+      </div>
     </nav>
+
+    <div class="hero-copy">
+      <div class="eyebrow">Independent Artist · Thailand</div>
+      <h1>FV.</h1>
+      <div class="rule"></div>
+      <p class="tagline">สร้างเพลงในแบบที่เป็นตัวเอง</p>
+    </div>
+
+    <a class="scroll" href="#about" aria-label="Scroll to About">⌄</a>
   </header>
 
   <main>
-
-    <!-- Hero -->
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="eyebrow">Independent Artist · Thailand</p>
-        <h1 class="hero-title">FV.</h1>
-        <div class="hero-line"></div>
-        <p class="tagline">สร้างเพลงในแบบที่เป็นตัวเอง</p>
-        <p class="hero-note">Music, feelings &amp; little stories.</p>
-        <a class="scroll-cue" href="#about" aria-label="Scroll to About">↓</a>
-      </div>
-    </section>
-
-    <!-- About -->
     <section class="about" id="about">
-      <div class="container about-grid">
-
-        <div class="about-art" aria-label="FV. artist artwork">
-          <span class="art-mark">FV.</span>
-          <span class="art-caption">a little piece of me</span>
-        </div>
-
-        <div class="about-copy">
-          <p class="eyebrow">A Little About the Artist</p>
-          <h2 class="section-title">About FV.</h2>
-
-          <p>
-            FV. is an independent artist from Thailand who writes and
-            composes music inspired by emotions, love, and personal
-            experiences. Through each song, FV. explores different
-            feelings and stories while continuing to discover a sound
-            of their own.
-          </p>
-
-          <p class="about-signature">Written from the heart, FV.</p>
-        </div>
-
+      <div class="about-photo" role="img" aria-label="พื้นที่สำหรับภาพถ่ายของ FV.">
+        FV.
       </div>
-    </section>
 
-    <!-- Music -->
-    <section class="music" id="music">
-      <div class="container">
-
-        <div class="music-heading">
-          <div>
-            <p class="eyebrow">Music &amp; Stories</p>
-            <h2 class="section-title">Selected Music</h2>
-          </div>
-
-          <p class="music-intro">
-            Every song holds a feeling, a memory, or a story.
-          </p>
-        </div>
-
-        <div class="track-list">
-
-          <!-- 01 -->
-          <article class="track">
-            <span class="track-number">01</span>
-            <div class="track-art" aria-hidden="true">01</div>
-
-            <div class="track-info">
-              <h3 class="track-title">ทำไมไม่พูด</h3>
-              <p class="track-description">
-                เพลงนี้เน้นสื่อถึงความทรมานของการอยู่กับความไม่แน่นอน
-                และการรอคอยคำตอบที่ชัดเจนจากคนสำคัญ
-              </p>
-              <div class="track-credits">
-                <span>Beat by Harui</span>
-                <span class="main-credit">Written, Composed, Mixed &amp; Mastered by FV.</span>
-              </div>
-            </div>
-
-            <a class="listen-btn" href="https://youtu.be/yYX0znmsN7Y?si=l8eZdoXFBI47r7GB" target="_blank" rel="noopener noreferrer">LISTEN ↗</a>
-          </article>
-
-          <!-- 02 -->
-          <article class="track">
-            <span class="track-number">02</span>
-            <div class="track-art" aria-hidden="true">02</div>
-
-            <div class="track-info">
-              <h3 class="track-title">เธอไม่น่าทำแบบนั้นเลย</h3>
-              <p class="track-description">
-                เพลงอกหักที่ถ่ายทอดความเจ็บปวดจากการถูกหลอกในความสัมพันธ์
-              </p>
-              <div class="track-credits">
-                <span>Beat by Velvet Boulevard</span>
-                <span class="main-credit">Written, Composed, Mixed &amp; Mastered by FV.</span>
-              </div>
-            </div>
-
-            <a class="listen-btn" href="https://youtu.be/WmpqRE9Oz-Q?si=y_bQ1Lw4UJPBOFp6" target="_blank" rel="noopener noreferrer">LISTEN ↗</a>
-          </article>
-
-          <!-- 03 -->
-          <article class="track">
-            <span class="track-number">03</span>
-            <div class="track-art" aria-hidden="true">03</div>
-
-            <div class="track-info">
-              <h3 class="track-title">อย่าพูดลา</h3>
-              <p class="track-description">
-                บทเพลงที่ขอให้คนรักอย่าทิ้งจากไป
-              </p>
-              <div class="track-credits">
-                <span>Beat by Sam Calisto</span>
-                <span class="main-credit">Written, Composed, Mixed &amp; Mastered by FV.</span>
-              </div>
-            </div>
-
-            <a class="listen-btn" href="https://youtu.be/0hl1xHgjlVc?si=Gui6DI8Wy68sWDdw" target="_blank" rel="noopener noreferrer">LISTEN ↗</a>
-          </article>
-
-          <!-- 04 -->
-          <article class="track">
-            <span class="track-number">04</span>
-            <div class="track-art" aria-hidden="true">04</div>
-
-            <div class="track-info">
-              <h3 class="track-title">แม้หลับตา</h3>
-              <p class="track-description">
-                เพลงเศร้าที่เล่าถึงการพยายามห้ามใจ
-                แต่ก็ยังลืมคนรักเก่าไม่ได้
-              </p>
-              <div class="track-credits">
-                <span>Beat by Sam Calisto</span>
-                <span class="main-credit">Written, Composed, Mixed &amp; Mastered by FV.</span>
-              </div>
-            </div>
-
-            <a class="listen-btn" href="https://youtu.be/7CKgTslMYLk?si=E3buZJQ_9XpYVWrS" target="_blank" rel="noopener noreferrer">LISTEN ↗</a>
-          </article>
-
-          <!-- 05 -->
-          <article class="track">
-            <span class="track-number">05</span>
-            <div class="track-art" aria-hidden="true">05</div>
-
-            <div class="track-info">
-              <h3 class="track-title">อยากจะฟัง</h3>
-              <p class="track-description">
-                ความรู้สึกของคนที่ยังมีคำถาม
-                และอยากได้ความชัดเจนในความสัมพันธ์
-              </p>
-              <div class="track-credits">
-                <span>Beat by Jimi Beats</span>
-                <span class="main-credit">Written, Composed, Mixed &amp; Mastered by FV.</span>
-              </div>
-            </div>
-
-            <a class="listen-btn" href="https://youtu.be/2sQOVJsa9Vs?si=Je61IOrYcUsRMJZn" target="_blank" rel="noopener noreferrer">LISTEN ↗</a>
-          </article>
-
-          <!-- 06 -->
-          <article class="track">
-            <span class="track-number">06</span>
-            <div class="track-art" aria-hidden="true">06</div>
-
-            <div class="track-info">
-              <h3 class="track-title">ได้แต่ฝัน</h3>
-              <p class="track-description">
-                เรื่องราวของการแอบรักใครสักคน
-                แต่ไม่กล้าเปิดเผยความรู้สึก
-              </p>
-              <div class="track-credits">
-                <span>Beat by Luarlang</span>
-                <span class="main-credit">Written, Composed, Mixed &amp; Mastered by FV.</span>
-              </div>
-            </div>
-
-            <a class="listen-btn" href="https://youtu.be/gDFrjs3h_OA?si=vSFI8w4otSulXn6r" target="_blank" rel="noopener noreferrer">LISTEN ↗</a>
-          </article>
-
-          <!-- 07 -->
-          <article class="track">
-            <span class="track-number">07</span>
-            <div class="track-art" aria-hidden="true">07</div>
-
-            <div class="track-info">
-              <h3 class="track-title">คนรับใช้</h3>
-              <p class="track-description">
-                เรื่องราวของการทุ่มเททุกอย่างให้ความรัก
-                แต่กลับถูกหลอกและทิ้งไว้กับความเจ็บปวด
-              </p>
-              <div class="track-credits">
-                <span>Beat by Sam Calisto</span>
-                <span class="main-credit">Written, Composed, Mixed &amp; Mastered by FV.</span>
-              </div>
-            </div>
-
-            <a class="listen-btn" href="https://youtu.be/CDlbvTNCoWY?si=ILCj81PvJXWt_QvL" target="_blank" rel="noopener noreferrer">LISTEN ↗</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Follow -->
-    <section class="follow" id="follow">
-      <div class="container">
-        <p class="eyebrow">Stay Connected</p>
-        <h2 class="section-title">Follow FV.</h2>
-        <p class="follow-description">
-          ติดตามผลงานและอัปเดตเพลงใหม่ ๆ
+      <div>
+        <div class="section-label">A little about the artist</div>
+        <h2>About FV.</h2>
+        <p>
+          FV. is an independent artist from Thailand who writes and composes
+          music inspired by emotions, love, and personal experiences.
+          Through each song, FV. explores different feelings and stories
+          while continuing to discover a sound of their own.
         </p>
-
-        <div class="social-links">
-
-          <a class="social-link"
-             href="https://instagram.com/frenchzzzz"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="Follow FV. on Instagram">
-
-            <svg class="social-icon" viewBox="0 0 24 24"
-                 fill="none" stroke="currentColor" stroke-width="1.8"
-                 stroke-linecap="round" stroke-linejoin="round"
-                 aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="5"/>
-              <circle cx="12" cy="12" r="4"/>
-              <circle cx="17.5" cy="6.5" r="1"
-                      fill="currentColor" stroke="none"/>
-            </svg>
-
-            <span class="social-text">
-              <span class="social-label">INSTAGRAM ↗</span>
-              <span class="social-handle">@frenchzzzz</span>
-            </span>
-          </a>
-
-          <a class="social-link"
-             href="https://www.youtube.com/@frenchwhisp"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="Visit FV. on YouTube">
-
-            <svg class="social-icon" viewBox="0 0 24 24"
-                 fill="currentColor" aria-hidden="true">
-              <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/>
-            </svg>
-
-            <span class="social-text">
-              <span class="social-label">YOUTUBE ↗</span>
-              <span class="social-handle">@frenchwhisp</span>
-            </span>
-          </a>
-
-        </div>
       </div>
     </section>
 
+    <section class="music" id="music">
+      <div class="heading">
+        <div>
+          <div class="section-label">Music &amp; Stories</div>
+          <h2>SELECT MUSIC</h2>
+          <p>เผื่อจะมีสักเพลง ที่พูดแทนความรู้สึกของคุณ</p>
+        </div>
+        <p class="credit-heading">Written, Composed, Mixed &amp; Mastered by FV.</p>
+      </div>
+
+      <div class="songs">
+        <article class="song">
+          <span class="num">01</span>
+          <div>
+            <h3>ทำไมไม่พูด</h3>
+            <p>เพลงเกี่ยวกับความทรมานของการอยู่กับความไม่แน่นอน และการรอคอยคำตอบที่ชัดเจนจากคนสำคัญ</p>
+            <p class="credit">Beat by Harui</p>
+            <p class="credit">Written, Composed, Mixed &amp; Mastered by FV.</p>
+          </div>
+          <a class="listen" href="https://youtu.be/yYX0znmsN7Y?si=l8eZdoXFBI47r7GB" target="_blank" rel="noopener">LISTEN ↗</a>
+        </article>
+
+        <article class="song">
+          <span class="num">02</span>
+          <div>
+            <h3>เธอไม่น่าทำแบบนั้นเลย</h3>
+            <p>เพลงอกหักที่ถ่ายทอดความเจ็บปวดจากการถูกหลอกในความสัมพันธ์</p>
+            <p class="credit">Beat by Velvet Boulevard</p>
+            <p class="credit">Written, Composed, Mixed &amp; Mastered by FV.</p>
+          </div>
+          <a class="listen" href="https://youtu.be/WmpqRE9Oz-Q?si=y_bQ1Lw4UJPBOFp6" target="_blank" rel="noopener">LISTEN ↗</a>
+        </article>
+
+        <article class="song">
+          <span class="num">03</span>
+          <div>
+            <h3>อย่าพูดลา</h3>
+            <p>บทเพลงที่ขอให้คนรักอย่าเพิ่งจากไป</p>
+            <p class="credit">Beat by Sam Calisto</p>
+            <p class="credit">Written, Composed, Mixed &amp; Mastered by FV.</p>
+          </div>
+          <a class="listen" href="https://youtu.be/0hl1xHgjlVc?si=Gui6DI8Wy68sWDdw" target="_blank" rel="noopener">LISTEN ↗</a>
+        </article>
+
+        <article class="song">
+          <span class="num">04</span>
+          <div>
+            <h3>แม้หลับตา</h3>
+            <p>เพลงเศร้าที่เล่าถึงการพยายามห้ามใจ แต่ก็ยังลืมคนรักเก่าไม่ได้</p>
+            <p class="credit">Beat by Sam Calisto</p>
+            <p class="credit">Written, Composed, Mixed &amp; Mastered by FV.</p>
+          </div>
+          <a class="listen" href="https://youtu.be/7CKgTslMYLk?si=E3buZJQ_9XpYVWrS" target="_blank" rel="noopener">LISTEN ↗</a>
+        </article>
+
+        <article class="song">
+          <span class="num">05</span>
+          <div>
+            <h3>อยากจะฟัง</h3>
+            <p>ความรู้สึกของคนที่ยังมีคำถาม และอยากได้ความชัดเจนในความสัมพันธ์</p>
+            <p class="credit">Beat by Jimi Beats</p>
+            <p class="credit">Written, Composed, Mixed &amp; Mastered by FV.</p>
+          </div>
+          <a class="listen" href="https://youtu.be/2sQOVJsa9Vs?si=Je61IOrYcUsRMJZn" target="_blank" rel="noopener">LISTEN ↗</a>
+        </article>
+
+        <article class="song">
+          <span class="num">06</span>
+          <div>
+            <h3>ได้แต่ฝัน</h3>
+            <p>เรื่องราวของการแอบรักใครสักคน แต่ไม่กล้าเปิดเผยความรู้สึก</p>
+            <p class="credit">Beat by Luarlang</p>
+            <p class="credit">Written, Composed, Mixed &amp; Mastered by FV.</p>
+          </div>
+          <a class="listen" href="https://youtu.be/gDFrjs3h_OA?si=vSFI8w4otSulXn6r" target="_blank" rel="noopener">LISTEN ↗</a>
+        </article>
+
+        <article class="song">
+          <span class="num">07</span>
+          <div>
+            <h3>คนรับใช้</h3>
+            <p>เรื่องราวของการทุ่มเททุกอย่างให้ความรัก แต่กลับถูกหลอกและทิ้งไว้กับความเจ็บปวด</p>
+            <p class="credit">Beat by Sam Calisto</p>
+            <p class="credit">Written, Composed, Mixed &amp; Mastered by FV.</p>
+          </div>
+          <a class="listen" href="https://youtu.be/CDlbvTNCoWY?si=ILCj81PvJXWt_QvL" target="_blank" rel="noopener">LISTEN ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="follow" id="follow">
+      <div class="section-label">Stay connected</div>
+      <h2>Follow FV.</h2>
+      <p>ติดตามผลงานและอัปเดตเพลงใหม่ ๆ</p>
+      <div class="socials">
+        <a href="https://instagram.com/frenchzzzz" target="_blank" rel="noopener">INSTAGRAM ↗</a>
+        <a href="https://www.youtube.com/@frenchwhisp" target="_blank" rel="noopener">YOUTUBE ↗</a>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <a class="footer-brand" href="#home">FV.</a>
+  <footer>
     <span>© <span id="year"></span> FV. All rights reserved.</span>
     <span>Independent Artist · Thailand</span>
   </footer>
 
   <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>

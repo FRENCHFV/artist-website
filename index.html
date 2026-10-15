@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#F5F1E8">
-  <meta name="description" content="FV. is an independent artist from Thailand.">
+  <meta name="description" content="FV. — Independent artist from Thailand">
   <title>FV. — Independent Artist</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 80px;
+      scroll-padding-top: 75px;
     }
 
     body {
@@ -59,15 +59,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
-      padding: 14px 6%;
+      gap: 15px;
+      padding: 12px 6%;
       background: rgba(245, 241, 232, 0.96);
-      border-bottom: 1px solid rgba(23, 58, 86, 0.25);
+      border-bottom: 1px solid rgba(23, 58, 86, 0.2);
       backdrop-filter: blur(12px);
     }
 
     .logo {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 700;
       letter-spacing: -0.1em;
       line-height: 1;
@@ -76,14 +76,14 @@
     .nav-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 7px;
+      gap: 6px;
     }
 
     .nav-links a {
-      padding: 6px 14px;
+      padding: 5px 12px;
       border: 1px solid var(--navy);
       border-radius: 50px;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
       transition: 0.25s;
     }
@@ -98,10 +98,10 @@
 
     .hero {
       position: relative;
-      min-height: 680px;
+      min-height: 490px;
       display: flex;
       align-items: center;
-      padding: 70px 8% 95px;
+      padding: 55px 7% 70px;
       overflow: hidden;
       isolation: isolate;
     }
@@ -110,12 +110,10 @@
       content: "";
       position: absolute;
       z-index: -1;
-      width: 65vw;
-      height: 65vw;
-      max-width: 750px;
-      max-height: 750px;
-      top: 5%;
-      right: -18%;
+      width: 550px;
+      height: 550px;
+      top: 0;
+      right: -15%;
       background: var(--blue);
       border-radius: 50%;
       animation: float 8s ease-in-out infinite;
@@ -125,33 +123,33 @@
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
       align-items: center;
-      gap: 35px;
+      gap: 30px;
       width: 100%;
-      max-width: 1200px;
+      max-width: 1100px;
       margin: auto;
     }
 
     .eyebrow {
       display: inline-block;
-      padding: 5px 13px;
+      padding: 4px 11px;
       border: 1px solid var(--navy);
       border-radius: 50px;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
     }
 
     .title-wrap {
       position: relative;
       width: fit-content;
-      margin: 30px 0 20px;
+      margin: 25px 0 18px;
     }
 
     .hero h1,
     .title-shadow {
       margin: 0;
-      font-size: clamp(120px, 20vw, 245px);
-      line-height: 0.85;
+      font-size: clamp(95px, 14vw, 165px);
+      line-height: 0.88;
       font-weight: 700;
       letter-spacing: -0.13em;
     }
@@ -163,8 +161,8 @@
 
     .title-shadow {
       position: absolute;
-      top: 12px;
-      left: 14px;
+      top: 9px;
+      left: 11px;
       z-index: 1;
       color: transparent;
       -webkit-text-stroke: 1px var(--slate);
@@ -172,33 +170,33 @@
     }
 
     .tagline {
-      margin: 25px 0 15px;
+      margin: 20px 0 10px;
       font-family: "IBM Plex Sans Thai", sans-serif;
-      font-size: clamp(22px, 3vw, 30px);
+      font-size: clamp(20px, 2.6vw, 27px);
       line-height: 1.6;
     }
 
     .hero-description {
-      max-width: 400px;
+      max-width: 350px;
       color: var(--slate);
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .hero-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
+      gap: 10px;
+      margin-top: 22px;
     }
 
     .pill {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 10px 18px;
+      gap: 7px;
+      padding: 9px 15px;
       border: 1px solid var(--navy);
       border-radius: 50px;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
       transition: 0.25s;
     }
@@ -211,12 +209,15 @@
     .pill:hover {
       background: var(--blue);
       color: var(--navy);
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
 
     .hero-visual {
       position: relative;
-      min-height: 390px;
+      width: 100%;
+      max-width: 330px;
+      min-height: 300px;
+      margin-left: auto;
     }
 
     .hero-frame-back {
@@ -226,7 +227,7 @@
       width: 76%;
       height: 84%;
       border: 1px solid var(--navy);
-      transform: rotate(7deg);
+      transform: rotate(6deg);
     }
 
     .hero-frame {
@@ -235,10 +236,10 @@
       right: 10%;
       width: 76%;
       height: 84%;
-      padding: 9px;
+      padding: 7px;
       background: var(--cream);
       border: 1px solid var(--navy);
-      transform: rotate(-4deg);
+      transform: rotate(-3deg);
     }
 
     .portrait-placeholder {
@@ -247,86 +248,86 @@
       place-items: center;
       width: 100%;
       height: 100%;
-      min-height: 290px;
+      min-height: 250px;
       background: var(--blue);
       overflow: hidden;
     }
 
     .portrait-placeholder strong {
-      font-size: clamp(110px, 16vw, 180px);
+      font-size: clamp(85px, 12vw, 130px);
       letter-spacing: -0.13em;
       opacity: 0.15;
     }
 
     .portrait-placeholder span {
       position: absolute;
-      bottom: 12px;
-      left: 13px;
-      font-size: 10px;
+      bottom: 10px;
+      left: 10px;
+      font-size: 9px;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
     }
 
     .sticker {
       position: absolute;
       right: 0;
-      bottom: 3%;
+      bottom: 0;
       z-index: 3;
       display: grid;
       place-items: center;
-      width: 95px;
-      height: 95px;
-      padding: 10px;
+      width: 75px;
+      height: 75px;
+      padding: 8px;
       border-radius: 50%;
       background: var(--navy);
       color: var(--cream);
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 700;
       line-height: 1.5;
       text-align: center;
-      transform: rotate(10deg);
+      transform: rotate(8deg);
     }
 
     .hero-index {
       position: absolute;
-      bottom: 20px;
-      left: 8%;
-      right: 8%;
+      bottom: 15px;
+      left: 7%;
+      right: 7%;
       display: flex;
       justify-content: space-between;
       color: var(--slate);
-      font-size: 10px;
-      letter-spacing: 0.1em;
+      font-size: 9px;
+      letter-spacing: 0.08em;
     }
 
-    /* SECTIONS */
+    /* SHARED SECTIONS */
 
     .section {
-      padding: 95px 8%;
+      padding: 65px 7%;
     }
 
     .container {
       width: 100%;
-      max-width: 1150px;
+      max-width: 1080px;
       margin: auto;
     }
 
     .section-kicker {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 7px;
       color: var(--slate);
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.13em;
+      letter-spacing: 0.12em;
     }
 
     .section-title {
       display: table;
-      margin: 0 0 42px;
-      padding-bottom: 9px;
+      margin: 0 0 28px;
+      padding-bottom: 7px;
       border-bottom: 2px solid var(--navy);
-      font-size: clamp(32px, 5vw, 49px);
-      line-height: 1.25;
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.3;
       letter-spacing: -0.04em;
     }
 
@@ -338,27 +339,27 @@
 
     .about-layout {
       display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
+      grid-template-columns: 0.8fr 1.2fr;
       align-items: center;
-      gap: clamp(40px, 8vw, 100px);
+      gap: clamp(30px, 6vw, 70px);
     }
 
     .about-visual {
       position: relative;
-      min-height: 400px;
+      min-height: 310px;
     }
 
     .about-outline {
       position: absolute;
       inset: 2% 8% 8% 0;
       border: 1px solid var(--navy);
-      transform: rotate(-5deg);
+      transform: rotate(-4deg);
     }
 
     .about-frame {
       position: absolute;
       inset: 7% 0 0 8%;
-      padding: 9px;
+      padding: 7px;
       background: var(--cream);
       border: 1px solid var(--navy);
     }
@@ -369,133 +370,97 @@
       place-items: center;
       width: 100%;
       height: 100%;
-      min-height: 320px;
+      min-height: 260px;
       background: var(--cream);
       overflow: hidden;
     }
 
     .about-placeholder strong {
-      font-size: clamp(100px, 13vw, 160px);
+      font-size: clamp(80px, 11vw, 125px);
       letter-spacing: -0.13em;
       opacity: 0.15;
     }
 
     .about-placeholder span {
       position: absolute;
-      bottom: 12px;
-      left: 13px;
-      font-size: 10px;
+      bottom: 10px;
+      left: 10px;
+      font-size: 9px;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
     }
 
     .about-stamp {
       position: absolute;
-      right: -4%;
-      bottom: 3%;
-      padding: 10px 14px;
+      right: -3%;
+      bottom: 2%;
+      padding: 8px 11px;
       background: var(--navy);
       color: var(--cream);
-      font-size: 11px;
-      transform: rotate(5deg);
+      font-size: 10px;
+      transform: rotate(4deg);
     }
 
     .about-copy p {
-      margin: 0 0 23px;
+      margin: 0 0 20px;
       font-family: "IBM Plex Sans Thai", sans-serif;
-      font-size: 17px;
-      line-height: 2;
-    }
-
-    .about-copy .english {
-      font-family: "DM Sans", sans-serif;
       font-size: 16px;
       line-height: 1.95;
     }
 
     .signature {
       display: inline-block;
-      margin-top: 4px;
-      padding-top: 15px;
+      margin-top: 3px;
+      padding-top: 12px;
       border-top: 1px solid var(--navy);
       font-family: "IBM Plex Sans Thai", sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
     }
 
     /* MUSIC */
 
     .music-intro {
-      max-width: 570px;
-      margin: -20px 0 45px;
+      max-width: 550px;
+      margin: -8px 0 28px;
       color: var(--slate);
       font-family: "IBM Plex Sans Thai", sans-serif;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .music-grid {
       display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       align-items: start;
-      gap: 40px 22px;
+      gap: 35px 30px;
     }
 
     .track {
       min-width: 0;
-    }
-
-    .track:nth-child(1) {
-      grid-column: 1 / span 5;
-    }
-
-    .track:nth-child(2) {
-      grid-column: 8 / span 5;
-      margin-top: 85px;
-    }
-
-    .track:nth-child(3) {
-      grid-column: 3 / span 4;
-      margin-top: -5px;
-    }
-
-    .track:nth-child(4) {
-      grid-column: 8 / span 5;
-      margin-top: 30px;
-    }
-
-    .track:nth-child(5) {
-      grid-column: 1 / span 4;
-      margin-top: 10px;
-    }
-
-    .track:nth-child(6) {
-      grid-column: 6 / span 4;
-      margin-top: 20px;
-    }
-
-    .track:nth-child(7) {
-      grid-column: 9 / span 4;
-      margin-top: 65px;
+      width: 100%;
     }
 
     .cover {
       position: relative;
-      padding: 9px;
+      width: 100%;
+      max-width: 330px;
+      margin: 0 auto;
+      padding: 7px;
       background: var(--blue);
       border: 1px solid var(--navy);
       transition: transform 0.3s;
     }
 
     .track:nth-child(odd) .cover {
-      transform: rotate(-2deg);
+      transform: rotate(-1deg);
     }
 
     .track:nth-child(even) .cover {
-      transform: rotate(2deg);
+      transform: rotate(1deg);
     }
 
     .track:hover .cover {
-      transform: rotate(0) translateY(-5px);
+      transform: rotate(0) translateY(-3px);
     }
 
     .cover img {
@@ -507,56 +472,57 @@
 
     .cover-number {
       position: absolute;
-      top: -13px;
-      left: -12px;
+      top: -10px;
+      left: -10px;
       z-index: 2;
       display: grid;
       place-items: center;
-      width: 37px;
-      height: 37px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       background: var(--navy);
       color: var(--cream);
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
     }
 
     .track-info {
-      padding: 16px 2px 0;
+      padding: 13px 2px 0;
     }
 
     .track-meta {
       display: flex;
       justify-content: space-between;
-      gap: 10px;
+      gap: 8px;
       margin-bottom: 5px;
       color: var(--slate);
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.07em;
     }
 
     .track h3 {
-      margin: 0 0 9px;
+      margin: 0 0 8px;
       font-family: "IBM Plex Sans Thai", sans-serif;
-      font-size: clamp(19px, 2.4vw, 27px);
+      font-size: clamp(17px, 2vw, 23px);
       line-height: 1.5;
       font-weight: 600;
     }
 
     .track-description {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       font-family: "IBM Plex Sans Thai", sans-serif;
       font-size: 13px;
-      line-height: 1.85;
+      line-height: 1.8;
       color: var(--charcoal);
     }
 
     .track-credit {
-      margin: 5px 0;
+      margin: 4px 0;
       color: var(--slate);
-      font-size: 11px;
+      font-size: 10px;
       line-height: 1.7;
+      overflow-wrap: anywhere;
     }
 
     .track-credit strong {
@@ -566,19 +532,20 @@
     .youtube-link {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      margin-top: 12px;
-      padding: 8px 13px;
+      gap: 6px;
+      margin-top: 10px;
+      padding: 8px 12px;
       border: 1px solid var(--navy);
       border-radius: 50px;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
       transition: 0.2s;
     }
 
     .youtube-link svg {
-      width: 17px;
-      height: 17px;
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
       fill: currentColor;
     }
 
@@ -591,12 +558,12 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 75px;
-      padding-top: 20px;
+      gap: 10px;
+      margin-top: 45px;
+      padding-top: 16px;
       border-top: 1px solid rgba(23, 58, 86, 0.3);
       color: var(--slate);
-      font-size: 11px;
+      font-size: 9px;
       letter-spacing: 0.06em;
     }
 
@@ -617,25 +584,18 @@
 
     .follow-layout {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: end;
-      gap: 40px;
-    }
-
-    .follow-big {
-      margin: 0;
-      font-size: clamp(65px, 10vw, 120px);
-      line-height: 0.95;
-      font-weight: 700;
-      letter-spacing: -0.1em;
+      grid-template-columns: 0.8fr 1.2fr;
+      align-items: start;
+      gap: 30px;
     }
 
     .follow-copy {
-      max-width: 430px;
-      margin-top: 22px;
+      max-width: 350px;
+      margin: 0;
       color: var(--blue);
       font-family: "IBM Plex Sans Thai", sans-serif;
       font-size: 15px;
+      line-height: 1.9;
     }
 
     .social-list {
@@ -647,47 +607,47 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 18px;
-      padding: 17px 0;
+      gap: 15px;
+      padding: 15px 0;
       border-bottom: 1px solid rgba(245, 241, 232, 0.35);
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 600;
       transition: 0.2s;
     }
 
     .social-link:hover {
-      padding-left: 10px;
+      padding-left: 8px;
       color: var(--blue);
     }
 
     .social-left {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
     }
 
     .social-icon {
-      width: 25px;
-      height: 25px;
+      width: 23px;
+      height: 23px;
       flex-shrink: 0;
       fill: currentColor;
     }
 
     .social-arrow {
-      font-size: 22px;
+      font-size: 21px;
     }
 
     .follow-note {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 65px;
-      padding-top: 18px;
+      gap: 12px;
+      margin-top: 40px;
+      padding-top: 15px;
       border-top: 1px solid rgba(245, 241, 232, 0.35);
       color: var(--blue);
-      font-size: 10px;
-      letter-spacing: 0.12em;
+      font-size: 9px;
+      letter-spacing: 0.1em;
     }
 
     /* FOOTER */
@@ -697,15 +657,15 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 15px;
-      padding: 22px 8%;
+      gap: 12px;
+      padding: 18px 7%;
       color: var(--slate);
-      font-size: 11px;
+      font-size: 10px;
     }
 
-    footer .footer-logo {
+    .footer-logo {
       color: var(--navy);
-      font-size: 24px;
+      font-size: 23px;
       font-weight: 700;
       letter-spacing: -0.1em;
     }
@@ -713,13 +673,23 @@
     /* ANIMATION */
 
     @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(16px); }
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(12px);
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
         animation: none !important;
         transition: none !important;
       }
@@ -729,59 +699,53 @@
 
     @media (max-width: 800px) {
       .hero {
-        padding-left: 6%;
-        padding-right: 6%;
+        min-height: 430px;
       }
 
       .hero-layout {
-        grid-template-columns: 1fr 0.8fr;
-        gap: 10px;
-      }
-
-      .hero h1,
-      .title-shadow {
-        font-size: clamp(105px, 19vw, 175px);
+        gap: 15px;
       }
 
       .hero-visual {
-        min-height: 310px;
+        max-width: 280px;
+        min-height: 260px;
       }
 
-      .section {
-        padding: 78px 6%;
+      .portrait-placeholder {
+        min-height: 215px;
       }
 
       .about-layout {
-        gap: 35px;
+        gap: 30px;
       }
 
       .about-visual {
-        min-height: 330px;
+        min-height: 280px;
       }
 
-      .track:nth-child(1) { grid-column: 1 / span 6; }
-      .track:nth-child(2) { grid-column: 8 / span 5; margin-top: 65px; }
-      .track:nth-child(3) { grid-column: 2 / span 5; }
-      .track:nth-child(4) { grid-column: 8 / span 5; margin-top: 25px; }
-      .track:nth-child(5) { grid-column: 1 / span 5; }
-      .track:nth-child(6) { grid-column: 6 / span 5; }
-      .track:nth-child(7) { grid-column: 4 / span 6; margin-top: 20px; }
+      .about-placeholder {
+        min-height: 230px;
+      }
+
+      .music-grid {
+        gap: 30px 22px;
+      }
     }
 
     /* MOBILE */
 
     @media (max-width: 560px) {
       body {
-        font-size: 15px;
+        font-size: 14px;
       }
 
       .navbar {
-        padding: 12px 5%;
-        gap: 10px;
+        padding: 11px 5%;
+        gap: 8px;
       }
 
       .logo {
-        font-size: 27px;
+        font-size: 25px;
       }
 
       .nav-links {
@@ -789,141 +753,250 @@
       }
 
       .nav-links a {
-        padding: 6px 9px;
-        font-size: 10px;
+        padding: 5px 8px;
+        font-size: 9px;
       }
 
       .hero {
         min-height: auto;
-        padding: 60px 7% 75px;
+        padding: 45px 7% 60px;
+      }
+
+      .hero::before {
+        width: 340px;
+        height: 340px;
+        top: 30%;
+        right: -30%;
       }
 
       .hero-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: 1fr 0.78fr;
+        gap: 8px;
+      }
+
+      .eyebrow {
+        font-size: 8px;
+        padding: 4px 8px;
+      }
+
+      .title-wrap {
+        margin: 24px 0 14px;
       }
 
       .hero h1,
       .title-shadow {
-        font-size: clamp(125px, 34vw, 190px);
+        font-size: clamp(78px, 20vw, 115px);
       }
 
       .tagline {
-        font-size: 23px;
+        margin: 15px 0 8px;
+        font-size: 18px;
+      }
+
+      .hero-description {
+        font-size: 11px;
+        line-height: 1.7;
+      }
+
+      .hero-buttons {
+        gap: 7px;
+        margin-top: 15px;
+      }
+
+      .pill {
+        padding: 7px 10px;
+        font-size: 9px;
       }
 
       .hero-visual {
-        min-height: 320px;
-        width: 85%;
-        margin: 10px auto 0;
+        width: 100%;
+        min-height: 210px;
+        margin: 0;
+      }
+
+      .hero-frame {
+        padding: 5px;
+      }
+
+      .portrait-placeholder {
+        min-height: 175px;
+      }
+
+      .portrait-placeholder strong {
+        font-size: 75px;
+      }
+
+      .portrait-placeholder span {
+        font-size: 7px;
+        overflow-wrap: anywhere;
+      }
+
+      .sticker {
+        width: 57px;
+        height: 57px;
+        font-size: 7px;
       }
 
       .hero-index {
         left: 7%;
         right: 7%;
-        font-size: 9px;
+        font-size: 7px;
       }
 
       .section {
-        padding: 68px 7%;
+        padding: 48px 6%;
       }
 
       .section-title {
-        font-size: 35px;
-        margin-bottom: 32px;
+        font-size: 29px;
+        margin-bottom: 23px;
+      }
+
+      .section-kicker {
+        font-size: 9px;
       }
 
       .about-layout {
-        grid-template-columns: 1fr;
-        gap: 35px;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 18px;
       }
 
       .about-visual {
-        min-height: 340px;
-        width: 88%;
-        margin: auto;
+        min-height: 210px;
+      }
+
+      .about-frame {
+        padding: 5px;
       }
 
       .about-placeholder {
-        min-height: 270px;
+        min-height: 175px;
+      }
+
+      .about-placeholder strong {
+        font-size: 70px;
+      }
+
+      .about-placeholder span {
+        font-size: 7px;
+        overflow-wrap: anywhere;
+      }
+
+      .about-stamp {
+        right: -5%;
+        bottom: 0;
+        padding: 5px 7px;
+        font-size: 7px;
       }
 
       .about-copy p {
-        font-size: 16px;
+        font-size: 13px;
+        line-height: 1.85;
+        margin-bottom: 14px;
       }
 
-      .about-copy .english {
-        font-size: 15px;
+      .signature {
+        font-size: 11px;
+        line-height: 1.7;
       }
 
       .music-intro {
-        font-size: 14px;
+        margin: -5px 0 23px;
+        font-size: 13px;
       }
 
       .music-grid {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        gap: 35px 15px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 27px 14px;
       }
 
-      .track:nth-child(1) { grid-column: 1 / span 4; margin-top: 0; }
-      .track:nth-child(2) { grid-column: 3 / span 4; margin-top: 18px; }
-      .track:nth-child(3) { grid-column: 1 / span 4; margin-top: 0; }
-      .track:nth-child(4) { grid-column: 3 / span 4; margin-top: 15px; }
-      .track:nth-child(5) { grid-column: 1 / span 4; margin-top: 0; }
-      .track:nth-child(6) { grid-column: 3 / span 4; margin-top: 10px; }
-      .track:nth-child(7) { grid-column: 2 / span 4; margin-top: 0; }
-
       .cover {
-        padding: 7px;
+        padding: 5px;
+      }
+
+      .cover-number {
+        top: -8px;
+        left: -7px;
+        width: 25px;
+        height: 25px;
+        font-size: 9px;
+      }
+
+      .track-info {
+        padding-top: 10px;
+      }
+
+      .track-meta {
+        font-size: 8px;
       }
 
       .track h3 {
-        font-size: 19px;
+        font-size: 15px;
+        line-height: 1.6;
       }
 
       .track-description {
-        font-size: 12px;
+        font-size: 11px;
+        line-height: 1.75;
       }
 
       .track-credit {
-        font-size: 10px;
+        font-size: 9px;
       }
 
       .youtube-link {
-        font-size: 10px;
-        padding: 7px 10px;
+        gap: 4px;
+        padding: 7px 8px;
+        font-size: 8px;
+      }
+
+      .youtube-link svg {
+        width: 13px;
+        height: 13px;
+      }
+
+      .music-footer {
+        margin-top: 30px;
+        font-size: 8px;
       }
 
       .follow-layout {
         grid-template-columns: 1fr;
-        gap: 38px;
-      }
-
-      .follow-big {
-        font-size: clamp(65px, 18vw, 100px);
+        gap: 20px;
       }
 
       .follow-copy {
-        font-size: 14px;
+        font-size: 13px;
       }
 
       .social-link {
-        font-size: 16px;
+        font-size: 14px;
+        padding: 13px 0;
       }
 
       .follow-note {
-        margin-top: 48px;
+        margin-top: 30px;
+        font-size: 8px;
       }
 
       footer {
-        padding: 20px 7%;
+        padding: 16px 6%;
+        font-size: 9px;
       }
     }
 
-    @media (max-width: 360px) {
+    @media (max-width: 380px) {
+      .navbar {
+        gap: 5px;
+      }
+
       .nav-links a {
-        padding: 5px 7px;
-        font-size: 9px;
+        padding: 5px 6px;
+        font-size: 8px;
+      }
+
+      .hero-layout {
+        grid-template-columns: 1fr;
       }
 
       .hero h1,
@@ -931,8 +1004,41 @@
         font-size: 115px;
       }
 
+      .hero-visual {
+        max-width: 250px;
+        min-height: 240px;
+        margin: 10px auto 0;
+      }
+
+      .portrait-placeholder {
+        min-height: 200px;
+      }
+
+      .about-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .about-visual {
+        width: 80%;
+        min-height: 260px;
+        margin: 0 auto 10px;
+      }
+
+      .about-placeholder {
+        min-height: 220px;
+      }
+
       .track h3 {
-        font-size: 17px;
+        font-size: 14px;
+      }
+
+      .track-description {
+        font-size: 10px;
+      }
+
+      .youtube-link {
+        padding: 6px;
+        font-size: 7px;
       }
     }
   </style>
@@ -1029,13 +1135,6 @@
               ที่เป็นตัวเองอยู่เสมอ
             </p>
 
-            <p class="english">
-              FV. is an independent artist from Thailand who writes and composes
-              music inspired by emotions, love, and personal experiences.
-              Through each song, FV. explores different feelings and stories
-              while continuing to discover a sound of their own.
-            </p>
-
             <div class="signature">
               สร้างเพลงในแบบที่เป็นตัวเอง — FV.
             </div>
@@ -1068,7 +1167,8 @@
 
             <div class="track-info">
               <div class="track-meta">
-                <span>01 / SINGLE</span><span>FV.</span>
+                <span>01 / SINGLE</span>
+                <span>FV.</span>
               </div>
 
               <h3>ทำไมไม่พูด</h3>
@@ -1097,7 +1197,8 @@
 
             <div class="track-info">
               <div class="track-meta">
-                <span>02 / SINGLE</span><span>FV.</span>
+                <span>02 / SINGLE</span>
+                <span>FV.</span>
               </div>
 
               <h3>เธอไม่น่าทำแบบนั้นเลย</h3>
@@ -1125,7 +1226,8 @@
 
             <div class="track-info">
               <div class="track-meta">
-                <span>03 / SINGLE</span><span>FV.</span>
+                <span>03 / SINGLE</span>
+                <span>FV.</span>
               </div>
 
               <h3>อย่าพูดลา</h3>
@@ -1153,13 +1255,15 @@
 
             <div class="track-info">
               <div class="track-meta">
-                <span>04 / SINGLE</span><span>FV.</span>
+                <span>04 / SINGLE</span>
+                <span>FV.</span>
               </div>
 
               <h3>แม้หลับตา</h3>
 
               <p class="track-description">
-                เพลงเศร้าที่เล่าถึงการพยายามห้ามใจ แต่ก็ยังลืมคนรักเก่าไม่ได้
+                เพลงเศร้าที่เล่าถึงการพยายามห้ามใจ
+                แต่ก็ยังลืมคนรักเก่าไม่ได้
               </p>
 
               <p class="track-credit"><strong>Beat by</strong> Sam Calisto</p>
@@ -1181,13 +1285,15 @@
 
             <div class="track-info">
               <div class="track-meta">
-                <span>05 / SINGLE</span><span>FV.</span>
+                <span>05 / SINGLE</span>
+                <span>FV.</span>
               </div>
 
               <h3>อยากจะฟัง</h3>
 
               <p class="track-description">
-                เรื่องราวของคนที่ยังมีคำถาม และอยากได้ความชัดเจนในความสัมพันธ์
+                เรื่องราวของคนที่ยังมีคำถาม
+                และอยากได้ความชัดเจนในความสัมพันธ์
               </p>
 
               <p class="track-credit"><strong>Beat by</strong> Jimi Beats</p>
@@ -1209,13 +1315,15 @@
 
             <div class="track-info">
               <div class="track-meta">
-                <span>06 / SINGLE</span><span>FV.</span>
+                <span>06 / SINGLE</span>
+                <span>FV.</span>
               </div>
 
               <h3>ได้แต่ฝัน</h3>
 
               <p class="track-description">
-                เพลงของคนที่แอบรักใครสักคน แต่ไม่กล้าเปิดเผยความรู้สึก
+                เพลงของคนที่แอบรักใครสักคน
+                แต่ไม่กล้าเปิดเผยความรู้สึก
               </p>
 
               <p class="track-credit"><strong>Beat by</strong> Luarlang</p>
@@ -1237,7 +1345,8 @@
 
             <div class="track-info">
               <div class="track-meta">
-                <span>07 / SINGLE</span><span>FV.</span>
+                <span>07 / SINGLE</span>
+                <span>FV.</span>
               </div>
 
               <h3>คนรับใช้</h3>
@@ -1275,12 +1384,10 @@
         <h2 class="section-title">FOLLOW FV.</h2>
 
         <div class="follow-layout">
-          <div>
-            <h3 class="follow-big">LET'S<br>CONNECT.</h3>
-            <p class="follow-copy">
-              ติดตามผลงานเพลงและเรื่องราวของ FV. ได้ทางช่องทางเหล่านี้
-            </p>
-          </div>
+
+          <p class="follow-copy">
+            ติดตามผลงานเพลงและเรื่องราวของ FV. ได้ทางช่องทางเหล่านี้
+          </p>
 
           <div class="social-list">
 
@@ -1325,7 +1432,8 @@
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
   </script>
 
 </body>
